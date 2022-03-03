@@ -5,4 +5,5 @@ from wtforms.validators import DataRequired, Length, ValidationError
 class StaffForm(FlaskForm):
     name = StringField("Name")
     subjectID = SelectField("Subjects", choices = [])
+    submit = SubmitField('Add')
 

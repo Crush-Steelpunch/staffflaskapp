@@ -16,8 +16,20 @@
                 <br>
                 <!-- form.submit is a button -->
                 {{ form.submit }}
-                <br>
             </form>
         </div>
+	<div class='staff'>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Subject</th>
+		</tr>
+	{% for staff in staffs %}
+	<tr>
+		<td>{{staff.staff_name}}</td><td> {{staff.subject_idbr.subject_name}}</td>
+	</tr>
+	{% endfor %}
+	</table>
+	</div>
     </body>
 </html>
