@@ -7,3 +7,7 @@ class StaffForm(FlaskForm):
     subjectID = SelectField("Subjects", choices = [])
     submit = SubmitField('Add')
 
+class SubjectAdd(FlaskForm):
+    name = StringField("Subject Name")
+    submit = SubmitField('Add')
+

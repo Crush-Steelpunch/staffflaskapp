@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>subjectstuff</title>
+    </head>
+    <body style="text-align: center">
+        <h1>subjects</h1>
+	  <div class='form'>
+            <form method='POST' action=''>
+		    {{ form.hidden_tag() }}
+		    {{ form.name.lable }} {{ form.name }}
+		    </br>
+		    {{ form.submit }}
+	    </form>
+	 </div>
+	 <div class='subjects'>
+		 {% for sub in subjs %}
+		 {{ sub.name }}</br>
+		 {% endfor %}
+	 </div>
+
+
+    </body>
+</html>
+
