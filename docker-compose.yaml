@@ -1,0 +1,8 @@
+version: 3
+services:
+  flask-app:
+    build: /.
+    ports:
+    - target: 5000
+      published: 5000
+      protocol: tcp
