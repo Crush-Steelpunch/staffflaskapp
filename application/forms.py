@@ -8,6 +8,6 @@ class StaffForm(FlaskForm):
     submit = SubmitField('Add')
 
 class SubjectAdd(FlaskForm):
-    name = StringField("Subject Name")
+    name = StringField("Subject Name", validators=[DataRequired()])
     submit = SubmitField('Add')
 
