@@ -54,7 +54,7 @@ class TestAdd(TestBase):
         self.assertIn(b"TestStaff",response.data)
 
 class TestSquare(TestBase):
-
+# this test is where the url is used for input instead of applixation header.
     def test_sqar(self):
         response = self.client.get(url_for('square',number=5))
         self.assertIn(b"25",response.data)
